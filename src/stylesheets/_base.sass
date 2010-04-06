@@ -1,0 +1,168 @@
+//**
+//  Susy: Elastic-Fluid grids without all the math
+//  by Eric Meyer and OddBird Collective
+//  oddbird. 
+//**
+
+//** 
+  GRID
+  un-comment and override these values as needed for your grid layout 
+  (defaults are shown)
+
+!grid_unit = "em"
+!total_cols = 10
+!col_width = 4
+!gutter_width = 1
+!side_gutter_width = 0
+
+//** 
+  FONT-SIZE
+  un-comment and override these values as needed (defaults are shown)
+  - you set the font and line heights in pixels.
+  - Susy will do the math and give you !base_font_size and !base_line_height 
+    variables, set flexibly against the common browser default of 16px
+
+!base_font_size_px = 16
+!base_line_height_px = 24
+
+// SUSY
+//  (don't move this @import above the GRID and FONT-SIZE overrides)
+
+@import susy/susy.sass
+
+// FONTS
+// Give yourself some font stacks to work with
+
+=sans-family
+  :font-family 'Futura Medium', 'Century Gothic', AppleGothic, sans-serif
+
+=serif-family
+  :font-family 'Adobe Caslon Pro', 'Big Caslon', Garamond, 'Hoefler Text', 'Times New Roman', Times, serif 
+
+// Remember to add default styles to everything!
+// COLORS
+// set any colors you will need later§
+
+!font_color= #241d1b
+!heading_color= #3c3429
+!subtitle_color= #679A01
+!link_color= #662115
+!footer_color= #E5E0DC
+!background_color= #FAF5F0
+!content_background= #fff
+!navigation_background= #755C4C
+!highlight_color= #9F9BF6
+
+!quiet_color = !font_color + #333
+!loud_color = !font_color - #222
+!header_color = #000
+
+!link_color= !font_color
+!hover_color = #000
+!focus_color = !hover_color
+!active_color = !hover_color
+!visited_color = !link_color
+
+!footer_color = #000
+
+/* @group links */
+
+\:focus
+  :outline 1px dotted
+
+a
+  :font-weight bold
+  &:link, &:visited
+    :color= !link_color
+    :text-decoration none
+    :font-weight bold
+  // &:focus, &:hover, &:active
+  //   :border-bottom
+  //     :width .125em
+  //     :style solid
+  //     :color #81A296
+
+/* @end */
+
+
+/* @group headers */
+
+h1
+  +serif-family
+  :font-size 3em
+  :line-height 1
+  :font-weight bold
+  :color= !heading_color
+  :margin 0 0 0 0.5
+ 
+h2
+  :font-weight bold
+  :text-transform uppercase
+  :margin-bottom 1.5em
+  :color= !subtitle_color
+
+h3
+  :color = !subtitle_color
+
+/* @end */
+
+
+/* @group block tags */
+
+p
+  :font-size 1em
+  :line-height 1.5em
+  :margin 0 0 1.5em 0
+  :padding 0
+
+pre
+  :border-left= ".5em solid" !quiet_color
+  :margin 0 0 1.5em 0
+  :padding 1.5em
+
+=list-default(!ol = false)
+  @if !ol
+    :list-style decimal
+    :margin 0 1.5em 1.5em 1.5em
+  @else
+    :list-style disc
+    :margin 0 1.5em 1.5em 1.5em
+ol
+  +list-default("ol")
+
+ul
+  +list-default
+
+/* @end */
+
+
+/* @group inline tags */
+
+strong, b 
+  :font-family "Helvetica Neue", Arial, Helvetica, sans-serif
+  :font-weight 800
+
+em, i
+  :font-family "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Arial, Helvetica, sans-serif
+  :font-weight 300
+
+ins
+  :text-decoration underline
+
+del
+  :text-decoration line-through
+
+/* @end */
+
+/* @mixins */
+
+=rotate(!degrees)
+  !percent = !degrees/360.0
+  :-moz-transform = rotate(!degrees+"deg")
+  :-o-transform = rotate(!degrees+"deg")
+  :-webkit-transform = rotate(!degrees+"deg")
+
+  // :filter = progid:DXImageTransform.Microsoft.BasicImage(rotation=!percent)
+  // :-ms-filter = progid:DXImageTransform.Microsoft.BasicImage(rotation=!percent}) /* IE8
+
+/* @end */

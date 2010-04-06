@@ -1,0 +1,180 @@
+/*
+  Welcome to Susy. Use this file to define screen styles.
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+
+/* @group reset */
+
+@import compass/reset.sass
+
+/* @end */
+
+/* @group defaults */
+
+@import base.sass
+
+/* @end */
+
+
+/* @group STRUCTURE */
+
+html, body
+  +susy
+  +reset-html5
+  :background-color = !background_color
+  color= !font_color
+  +sans-family
+  :height 100%
+#header
+  +nowrap
+  +pad(1,0)
+  :height 3em
+  :margin 1.5em 0 0 0
+  h1
+    :height 77px
+    :width auto
+    a
+      +full
+      +columns(10)
+      :color= !font_color
+      :height 77px
+      +replace-text("/images/enomarket_logo_with_glass.png", "left")
+      &:focus, &:hover, &:active
+        :border-bottom 0
+#page
+  +container
+  p
+    :text-align justify
+
+
+
+#nav
+  :float right
+  +pad(1,1)
+  +full
+  ul#navigation
+    :background-color = !navigation_background
+    +horizontal-list-container
+    +border-top-radius(".5em")
+    li
+      +horizontal-list-item(".5em")
+      :padding-top .5em
+      &:first-child, &.first
+        :padding-left .5em
+      &:last-child, &.last
+        :padding-right .5em
+      &.active
+        :background-color= !content_background
+        a
+          :color= !subtitle_color
+          &:focus, &:hover, &:active
+            :color= !subtitle_color
+      a
+        :color #fff
+        :text-align center
+        &:focus, &:hover, &:active
+          :color= !highlight_color
+          
+
+#content
+  +full
+  +pad(1,1)
+  :background-color= !content_background
+  :padding-top 1.5em
+  :margin-bottom 1.5em
+  +border-radius(".5em")
+  :height 100%
+  :min-height 11em
+  
+#map
+  :height 100%
+  iframe
+    :margin 0 10%
+    :width 75%
+    :height 20em
+    :padding 0
+
+// #ponudba > div > ul.artikli
+
+#footer
+  +full
+  :height 13em
+  :margin-bottom 1.5em
+#kontakt, #urnik  
+  h2
+    :margin-top .75em
+    :margin-bottom .75em
+#urnik
+  :width 176px
+  / :background #FFFDA0 url("/images/paperpin.png") no-repeat 95% 0%
+  :background #FFFADD url("/images/paperpin.png") no-repeat 5% 0%
+  :text-align center
+  :position absolute
+  :margin-left -12em
+  / :margin-top -1.5em
+  / +rotate("-10.0")
+  dl
+    :margin-bottom .75em
+    dt
+      :font-weight bold
+    
+#kontakt
+  +columns(4)
+  +border-radius(".5em")
+  :text-align center
+  :background-color #FFFADD
+  :margin 0 25%
+  :padding 1em
+  .vcard
+    :height 7em
+    :margin-bottom .75em
+    & > span
+      :clear both
+      :float left
+
+#ponudba
+  div
+    +columns(4)
+    +clearfix
+    :float left
+    :clear right
+  ul.artikli
+    :display none
+  div#test
+    
+    +full
+/* @end */
+
+  
+/* @group COMPONENTS by type */
+
+* html #page
+  :height 100%
+
+
+/* @end */
+
+
+/* @group OVERRIDES by content */
+
+
+/* @end */
+
+        
+/* @group OVERRIDES by page */
+
+
+/* @end */
+
+
+/* @group DEBUG */
+
+/*   uncomment, adjust and use for debugging    */
+
+//#page
+  //+show-grid("/images/grid.png")
+  // +show-grid("/images/line.png")
+
+
+
+/* @end */

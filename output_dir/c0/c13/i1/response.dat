@@ -1,0 +1,43 @@
+HTTP/1.1 500 Internal Server Error
+Date: Sat, 03 Apr 2010 01:04:21 GMT
+Server: Apache/2.2.9 (Debian) Phusion_Passenger/2.2.10
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 2.2.10
+Cache-Control: no-cache
+Set-Cookie: _poletje_session=BAh7CjoQbG9jYXRpb25faWRsLQcBAACAOg5yZXR1cm5fdG8iHS9uZXdzYXJ0aWNsZXMvNi9zZmk5ODc2LzoQX2NzcmZfdG9rZW4iMTZJSUM4UUJDb1NXbm51N2RlR2VhQVBQU3VwQkdOZXlYaFNLNDY3cHhoYkU9IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIi9aYSDFvmVsamVubyBha2Npam8gbW9yYXRlIGJpdGkgcHJpamF2bGplbmkGOgpAdXNlZHsGOwlGOg9zZXNzaW9uX2lkIiVjYzA0ODgwMmM3NjJkY2NiMmJhNWFkYzA3YjNmODY1Yw%3D%3D--6e288246b752623e99102f3af501e90df178d9db
+Status: 500
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 574
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Napaka. Se opravičujemo.</title>
+	<style type="text/css">
+		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+		div.dialog {
+			width: 25em;
+			padding: 0 4em;
+			margin: 4em auto 0 auto;
+			border: 1px solid #ccc;
+			border-right-color: #999;
+			border-bottom-color: #999;
+		}
+		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+	</style>
+</head>
+
+<body>
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <h1> Prišlo je do napake.</h1>
+    <p> Administrator je bil obveščen o napaki.</p>
+  </div>
+</body>
+</html>

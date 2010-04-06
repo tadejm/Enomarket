@@ -1,0 +1,279 @@
+HTTP/1.1 200 Partial Content
+Date: Sat, 03 Apr 2010 01:06:30 GMT
+Server: Apache/2.2.9 (Debian) Phusion_Passenger/2.2.10
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 2.2.10
+ETag: "43bf0b13853546321b8761f93bcd68b1"
+X-Runtime: 252
+Cache-Control: private, max-age=0, must-revalidate
+Set-Cookie: _poletje_session=BAh7CToQbG9jYXRpb25faWRpBjoOcmV0dXJuX3RvIiEvbmV3c2FydGljbGVzLzExMi8wMDAwMDEyMzQ1IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIi9aYSDFvmVsamVubyBha2Npam8gbW9yYXRlIGJpdGkgcHJpamF2bGplbmkGOgpAdXNlZHsGOwhGOg9zZXNzaW9uX2lkIiVjYzA0ODgwMmM3NjJkY2NiMmJhNWFkYzA3YjNmODY1Yw%3D%3D--b77f28647e97cbdecd99f0cf0a71a08fa5b28445
+Status: 200
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-2597/2598
+Content-Length: 2598
+Keep-Alive: timeout=15, max=72
+Connection: Keep-Alive
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>
+Poletje na fakulteti za šport
+</title>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible' />
+<link href="/stylesheets/screen.css?1249992086" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css?1249991551" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link href="/stylesheets/ie7.css?1249991563" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="/javascripts/fckeditor/fckeditor.js?1238811695" type="text/javascript"></script>
+
+<!-- = javascript_include_tag :defaults, 'fckeditor/fckeditor', 'lightbox', 'scriptaculous' -->
+<!-- = calendar_date_select_includes -->
+</head>
+<body>
+<div id='container_top'>
+<div class='center'>
+<div class='left'>
+<a href='/'>
+<img alt="Ljubljana_poletje_logo" src="/images/location_logos/1/medium/ljubljana_poletje_logo.png?1244153634" />
+</a>
+</div>
+<div class='right'>
+<ul id='stdout'></ul>
+<div id='header'></div>
+<div id='navi'>
+
+<ul id="ul_menu_1" class="ul_menu_depth_1 ul_menu"><li id="li_menu_3" class="li_menu_class"><a  class="menu_link" id ="menu_link_3" href="/bills/new?menu_id=3"> Prijavnica </a></li><li id="li_menu_8" class="li_menu_class"><a  class="menu_link" id ="menu_link_8" href="/menu/7/posts?menu_id=8"> Povpraševanje </a></li><li id="li_menu_6" class="li_menu_class"><a  class="menu_link" id ="menu_link_6" href="/starsi/1/posts?menu_id=6"> Kotiček za starše </a></li><li id="li_menu_30" class="li_menu_class"><a  class="menu_link" id ="menu_link_30" href="/arhiv/1/posts?menu_id=30"> Arhiv </a></li><li id="li_menu_44" class="li_menu_class"><a  class="menu_link" id ="menu_link_44" href="/clanek/2/posts?menu_id=44"> Zgodba udeleženke </a></li></ul>
+
+</div>
+</div>
+<div class='third'>
+<a href='http://www.zsoms.si/' id='zsoms_link'>
+<img alt="Zsoms_logo" id="zsoms_logo" path="/layout/" src="/images/layout/zsoms_logo.png?1238884248" title="Zveza za šport otrok in mladine slovenije" />
+</a>
+</div>
+</div>
+</div>
+<div id='container_top_middle'>
+<div class='center'>
+<div class='left'>
+<span class='transdot'></span>
+</div>
+<div class='right'>
+</div>
+</div>
+</div>
+<div id='container_middle'>
+<div class='center'>
+<div class='left'>
+<div id='navigation'>
+
+
+
+
+
+<ul id="ul_menu_2" class="ul_menu_depth_2 ul_menu"></ul>
+
+</div>
+<h1>Aktualno</h1>
+<div id='locations_menu'>
+<ul>
+<!-- nomber of different backgorunds -->
+<!-- see sass/standard/menu.sass -->
+<li class='locations_menu_1'>
+<a href="/welcome/location/1" class="active">Ljubljana 2009</a>
+</li>
+<li class='locations_menu_2'>
+<a href="/welcome/location/8">Maribor 2009</a>
+</li>
+</ul>
+
+</div>
+<a href='http://www.fsp.uni-lj.si/'>
+<img alt="Logo fs-modra" src="/images/logos/1/small/logo FS-modra.jpg?1244247115" />
+</a>
+
+</div>
+<div class='right'>
+<div id='welcomeup'>
+<div id='news'>
+<h1>Novice</h1>
+<p>
+<div class="pagination"><a href="/welcome/location/1?page=29" class="prev_page" rel="prev">Novejše &laquo;</a> <a href="/welcome/location/1?page=1" rel="start">1</a> <a href="/welcome/location/1?page=2">2</a> <span class="gap">&hellip;</span> <a href="/welcome/location/1?page=17">17</a> <a href="/welcome/location/1?page=18">18</a> <a href="/welcome/location/1?page=19">19</a> <a href="/welcome/location/1?page=20">20</a> <a href="/welcome/location/1?page=21">21</a> <a href="/welcome/location/1?page=22">22</a> <a href="/welcome/location/1?page=23">23</a> <a href="/welcome/location/1?page=24">24</a> <a href="/welcome/location/1?page=25">25</a> <span class="disabled next_page">Starejše &raquo;</span></div>
+</p>
+
+</div>
+</div>
+
+</div>
+<div class='slide'>
+<div id='posts'>
+<div id='post_id_5'>
+<h1>Galerija</h1>
+<div class='images'>
+<ul class='photos'>
+<li>
+<a href='/assets/posts/1/medium/dsc01523.jpg' rel='lightbox[5]'>
+<img alt="Dsc01523" src="/assets/posts/1/small/dsc01523.jpg?1238884184" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/2/medium/img_1574.jpg' rel='lightbox[5]'>
+<img alt="Img_1574" src="/assets/posts/2/small/img_1574.jpg?1238884184" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/3/medium/img_1739.jpg' rel='lightbox[5]'>
+<img alt="Img_1739" src="/assets/posts/3/small/img_1739.jpg?1238884183" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/4/medium/img_1861.jpg' rel='lightbox[5]'>
+<img alt="Img_1861" src="/assets/posts/4/small/img_1861.jpg?1238884184" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/5/medium/img_1888.jpg' rel='lightbox[5]'>
+<img alt="Img_1888" src="/assets/posts/5/small/img_1888.jpg?1238884184" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/7/medium/img_1826.jpg' rel='lightbox[5]'>
+<img alt="Img_1826" src="/assets/posts/7/small/img_1826.jpg?1238884184" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/8/medium/img_1921.jpg' rel='lightbox[5]'>
+<img alt="Img_1921" src="/assets/posts/8/small/img_1921.jpg?1238884185" />
+</a>
+</li>
+<li>
+<a href='/assets/posts/257/medium/skupaj 1 (3).JPG' rel='lightbox[5]'>
+<img alt="Skupaj 1 (3)" src="/assets/posts/257/small/skupaj 1 (3).JPG?1246466381" />
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div id='post_id_140'>
+<h3><a href="http://picasaweb.google.si/Poletje.na.FS">&Scaron;e več slik!!!</a></h3><p>&nbsp;</p>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div id='container_bottom'>
+<div class='center'>
+<div class='left'>
+<div id='contacts'>
+<div id='posts'>
+<div id='post_id_57'>
+<h1>Kontaktne informacije</h1><p>Telefon:<br />031 552 732, PON - PET, med 8. in 9. uro ter 15. in 17. uro</p><p>e-po&scaron;ta:&nbsp;<br /><a href="mailto:karmen.novic@yahoo.com">poletje.na.fs@gmail.com</a></p>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+<div class='right'>
+<div id='programi'>
+<div id='firstpromo'>
+<div id='posts'>
+<div id='post_id_6'>
+<h1>Kaj, kje, kdaj?</h1>
+
+</div>
+<div id='post_id_14'>
+<p><a href="/KAJ/1/posts">O PROGRAMU</a></p><p><a href="/kje/1/posts">LOKACIJA</a></p><p><a href="/kdaj/1/posts">TERMINI</a></p><p><a href="/ekipa/1/posts">NA&Scaron;A EKIPA<br /></a></p>
+
+</div>
+
+</div>
+
+
+</div>
+<div id='secondpromo'>
+<div id='posts'>
+<div id='post_id_40'>
+<h1>Predstavitev delavnic</h1><p><a href="/URNIK/1/posts">URNIK</a></p><p><a href="/dop del/1/posts">DOPOLDANSKE DELAVNICE</a></p><p><a href="/pop del/1/posts">POPOLDANSKE DELAVNICE</a></p><p><a href="/varstvo/1/posts">VARSTVO</a></p>
+
+</div>
+
+</div>
+
+
+</div>
+<div id='thirdpromo'>
+<div id='posts'>
+<div id='post_id_7'>
+<h1>Prijava</h1>
+
+</div>
+<div id='post_id_11'>
+<p><a href="/CENA/1/posts">CENA</a></p><p><a href="http://www.poletje.eu/bills/new?menu_id=3">PRIJAVNICA</a></p><p><a href="/prijava/1/posts">Ne morem se prijaviti preko spletne prijave!</a></p><p><a href="/POGOJI/1/posts">POGOJI PRIJAVE</a></p>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='container_footer'>
+<div class='center'>
+<ul class='logos'>
+<li>
+<a href='http://www.radiohit.si/'>
+<img alt="Radio hit" src="/images/sponsors/logos/4/small/Radio Hit.JPG?1241552362" />
+</a>
+</li>
+<li>
+<a href='http://www.racunalniske-novice.com/'>
+<img alt="Logotip rn 150x63" src="/images/sponsors/logos/5/small/Logotip RN 150x63.jpg?1242902122" />
+</a>
+</li>
+<li>
+<a href='http://www.nlbvita.si/'>
+<img alt="Logotip nlb resized" src="/images/sponsors/logos/6/small/logotip NLB resized.jpg?1242046403" />
+</a>
+</li>
+<li>
+<a href='http://www.ilirija.si/'>
+<img alt="Logotip vitergin resample1" src="/images/sponsors/logos/8/small/logotip Vitergin resample1.jpg?1245321598" />
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</body>
+<script src="/javascripts/main.js?1240457986" type="text/javascript"></script>
+
+<script src="/javascripts/calendar_date_select/calendar_date_select.js?1238811694" type="text/javascript"></script>
+
+<script src="/javascripts/calendar_date_select/format_finnish.js?1238811694" type="text/javascript"></script>
+
+<link href="/stylesheets/calendar_date_select/default.css?1238811695" media="screen" rel="stylesheet" type="text/css" />
+<script type='text/javascript'>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type='text/javascript'>
+try {
+var pageTracker = _gat._getTracker("UA-8528319-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+</html>
