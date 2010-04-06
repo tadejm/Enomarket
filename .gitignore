@@ -1,5 +1,6 @@
 .sass-cache/
 site/stylesheets/
+src/stylesheets/*.css
 site/*.html
 .DS_Store
 *.tmproj
