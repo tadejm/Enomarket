@@ -35,7 +35,7 @@ html, body
     :width auto
     a
       +full
-      +columns(10)
+      +columns(7,10)
       :color= !font_color
       :height 77px
       +replace-text("/images/enomarket_logo_with_glass.png", "left")
@@ -43,6 +43,7 @@ html, body
         :border-bottom 0
 #page
   +container
+  :padding-left 7em
   p
     :text-align justify
 
@@ -85,64 +86,113 @@ html, body
   +border-radius(".5em")
   :height 100%
   :min-height 11em
-  
+  :border-style solid 
+  :border-color = !navigation_background
+  :border-width 1px
+
+.slike
+  :width 520px
+  :background-color = !background_color
+  :border-style dotted
+  :border-color = !navigation_background
+  :border-width 1px
+  :text-align center
+  :margin 0 auto
+  :margin-bottom 1.5em
+  img
+    :margin= px2em(5)+"em" "auto"
+    :vertical-align middle
+
 #map
   :height 100%
+  :margin-bottom 1.5em
   iframe
     :margin 0 10%
     :width 75%
     :height 20em
     :padding 0
 
-// #ponudba > div > ul.artikli
-
 #footer
   +full
   :height 13em
   :margin-bottom 1.5em
+
 #kontakt, #urnik  
   h2
     :margin-top .75em
     :margin-bottom .75em
+
 #urnik
   :width 176px
-  / :background #FFFDA0 url("/images/paperpin.png") no-repeat 95% 0%
-  :background #FFFADD url("/images/paperpin.png") no-repeat 5% 0%
+  :background #FFFADD url(/images/paperpin.png) no-repeat 5% 0%
   :text-align center
   :position absolute
   :margin-left -12em
-  / :margin-top -1.5em
-  / +rotate("-10.0")
+  :border-style dotted
+  :border-color= !background_color - #555
+  :border-width 1px
   dl
     :margin-bottom .75em
     dt
       :font-weight bold
     
 #kontakt
-  +columns(4)
-  +border-radius(".5em")
-  :text-align center
-  :background-color #FFFADD
-  :margin 0 25%
-  :padding 1em
+  +columns(10)
+  +full
+  :display block
   .vcard
-    :height 7em
+    :border-style dotted
+    :border-color #ddd
+    :border-width 1px
+    :margin-left 25%
+    :margin-right 25%
     :margin-bottom .75em
+    :margin-top .75em
+    :height 100%
+    :background-color #FFFADD
     & > span
-      :clear both
-      :float left
+      :height 100%
+      :display block
+      :text-align center
 
 #ponudba
-  div
-    +columns(4)
-    +clearfix
-    :float left
-    :clear right
-  ul.artikli
-    :display none
-  div#test
-    
+  +columns(10)
+  +full
+  :margin-bottom 1.5em
+  .artikli
+    :margin-left 12.5%
+    :width 75%
+    :height = !base_line_height_px + "px"
+    h3
+      :padding-left 40px
+      :height = !base_line_height_px + "px"
+      :border
+        :style dotted
+        :color #444
+        :width 1px 
+      :background #ddd url(/images/round_minus_plus.png) no-repeat 2px 0px
+    &.active
+      :display block
+      :height 100%
+      h3
+        :height 24px
+        :background #ddd url(/images/round_minus_plus.png) no-repeat 2px -24px
+
+    ul
+      :display none
+      :margin-bottom 0
+      li
+        :font-family trebuchet, verdana, arial, sans-serif
+        :font-size 12px
+        :line-height 2em
+        :vertical-align middle
+  p
+    +columns(10)
     +full
+    :display block
+    :clear both
+    
+
 /* @end */
 
   
@@ -172,7 +222,7 @@ html, body
 /*   uncomment, adjust and use for debugging    */
 
 //#page
-  //+show-grid("/images/grid.png")
+// +show-grid("/images/grid.png")
   // +show-grid("/images/line.png")
 
 

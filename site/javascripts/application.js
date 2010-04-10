@@ -3,5 +3,10 @@ $(document).ready(function() {
   if (nav)
     $('ul#navigation > li > a[href$="' + nav + '"]').parent().addClass('active');
     
-  // $('#ponudba h3')
+  $('div#ponudba > div > h3').click(function() {
+    $("ul#" + this.nextElementSibling.id).toggle()
+    $(this.parentNode).toggleClass('active');
+  });
+
+
 });
