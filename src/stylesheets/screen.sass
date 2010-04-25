@@ -88,8 +88,9 @@ html, body
   border-color: $navigation_background
   border-width: 1px
 
-.slike
-  width: 520px
+
+.slike, .velika-slika
+  width: 532px
   background-color: $background_color
   border-style: dotted
   border-color: $navigation_background
@@ -101,6 +102,17 @@ html, body
     margin: px2em(5) + em auto
     vertical-align: middle
 
+.slike
+  border-top: none
+  img
+    border: 1px solid $background_color
+    .current
+      border: 2px solid #f00
+    
+.velika-slika
+  margin-bottom: 0
+  border-bottom: none
+    
 #map
   height: 100%
   margin-bottom: 1.5em

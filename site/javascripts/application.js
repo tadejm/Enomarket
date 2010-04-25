@@ -12,5 +12,10 @@ $(document).ready(function() {
     $(this.parentNode).toggleClass('active');
   });
 
-
+  var images = $('div.slike').length != 0;
+  if (images) {
+    $('div.slike > img').click(function() {
+      $('div.velika-slika > img')[0].src = this.src.replace('thumbs', 'full');
+    });
+  };
 });
