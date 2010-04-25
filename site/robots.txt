@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /javascript/
+Sitemap: http://www.enomarket.si/sitemap.xml
