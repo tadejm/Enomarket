@@ -1,4 +1,4 @@
-ssh_user = "user@domain.com" # for rsync deployment
+ftp_user = "kicdej01@ftp.enomarket.si" # for rsync deployment
 remote_root = "~/path/to/remote/" # for rsync deployment
 
 desc "Runs preview"
