@@ -1,5 +1,5 @@
 - @layout = "application"
-- @page_title = "Enomarket d.o.o. - Trgovina s sredstvi za vinogradništvo in kletarstv"
+- @page_title = "Enomarket d.o.o. - Enološka sredstva, analize vina"
 - @site_name = "Trgovina"
 - @body_class = "home"
 - @page_description = "Splošni opis dejavnosti, lokacija, urnik in kontakt"
@@ -8,104 +8,9 @@
   %h2 Trgovina
   
   %p V naši trgovini boste našli vse, kar potrebujete za pridelavo dobrega vina.
-  
-#ponudba
+  = partial('partials/trgovina_izdelki')
 
-  .artikli
-    %h3 Enološka sredstva
-    %ul#enoloska_sredstva
-      %li Bentoniti (Bentogran, Pentagel, Pluxbenton,...)
-      %li Kalijev kazeinat
-      %li Silicijev dioksid
-      %li Želatina (tekoča, v prahu)
-      %li Oglje (deodorant, dekolorant, Carbosil,...)
-      %li jajčni beljak
-      %li ribji mehur
-      %li PVPP
-      %li citronska kislina
-      %li vinska kislina
-      %li jabolčna in mlečna kislina
-      %li magnezijev karbonat in sulfat
-      
-  .artikli
-    %h3 Kombinirana bistrila
-    %ul#kombinirana_bistrila
-      %li Caseostar
-      %li Alfa P
-      %li Technoclar WA
-      %li Phenol free
-      %li Caseocell
-      %li Caseomix
-      %li Microcell
-
-  .artikli
-    %h3 Sredstva za zaščito vina
-    %ul#sredstva_za_zascito_vina
-      %li 5-6% žveplasta kislina
-      %li Kalijev metabisulfit
-      %li Žveplo v trakovih,
-      %li Tanisol in Stopflor tablete
-      %li Ferroblock, Citrosol
-      %li metavinska kislina
-      %li kalijev sorbat
-      %li velika izbira taninov (hrastovi, iz jagodnih pečk, iz jagodne kožice,...)
-      
-  .artikli
-    %h3 Kvasovke
-    %ul#kvasovke
-      %li Uvaferm
-      %li Lalvin
-      %li Fermol
-      %li Ruler (art enology)
-  .artikli
-    %h3 Encimi
-    %ul#encimi
-      %li Lalzym
-      %li Endozym
-      %li Rapid (tekoči in v prahu)
-
-  .artikli
-    %h3 Razkužila in detergenti
-    %ul#razkuzila_in_detergenti
-      %li Removil
-      %li Enoidrosan
-      %li Supersodal
-      %li Neodetersol vetro
-      %li Sanoton
-      %li Detersol
-
-  .artikli
-    %h3 Filtri in filtrirna sredstva
-    %ul#filtri_in_filtrirna_sredstva
-      %li Filtrirne slojnice SEITZ 40x40 in 20x20
-      %li Kiselgur filtrirne moke
-      %li Predpaneli
-
-  .artikli
-    %h3 Ostala sredstva za vinarje
-    %ul#ostala_sredstva_za_vinarje
-      %li Steklenice – razne od 30ml – 1,5l
-      %li Zamaški (plutovinasti, kronski, silikonski Neocork, aluminijasti, za peneča vina)
-      %li Okrasne kapice za buteljke 0,75l raznobarve
-      %li Kartonaste transportne škatle in darilne ročke za od 1 do 4 steklenice
-      %li Več vrst kozarcev, vrčev, odpiračev
-      %li Oprema za analizo vina: SO2 prosti in skupni, titracijske kisline, pH
-      %li Drobna oprema za kletarje: zračnice in tlačilke inox, tesnila, pipe inox in ventili različnih velikosti
-      %li Pretočne cevi in črpalke Rover
-
-  .artikli
-    %h3 Razno
-    %ul#razno
-      %li Kozarci za vlaganje od 106ml – 2,5 l
-      %li Kozarci za med s pokrovčki
-      %li Velika izbira zaščitnih rokavic
-      %li Škarje za trgatev in rezervne vzmeti
-      %li Pripomočki za oskrbo vinograda
-      %li Etikete, lepilni trakovi
-      %li Zemlje
-      %li Gnojila
-
-%p Vsa enološka sredstva vam po potrebi odtehtamo.
-%p Po naročilu vam priskrbimo tudi mini polnilne linije, filtre, grelne sonde, sulfo dozatorje, mašilce, optične refraktometre, pretočne črpalke in ostalo kletarsko opremo.
-
-= partial('partials/trgovina_slike')
+  %p Vsa enološka sredstva vam po potrebi odtehtamo.
+  %p Po naročilu vam priskrbimo tudi mini polnilne linije, filtre, grelne sonde, sulfo dozatorje, mašilce, optične refraktometre, pretočne črpalke in ostalo kletarsko opremo.
+#slike
+  = partial('partials/trgovina_slike')

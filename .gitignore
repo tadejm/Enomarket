@@ -4,3 +4,4 @@ src/stylesheets/*.css
 site/*.html
 .DS_Store
 *.tmproj
+.bundle

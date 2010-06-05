@@ -16,6 +16,7 @@ $(document).ready(function() {
   if (images) {
     $('div.slike > img').click(function() {
       $('div.velika-slika > img')[0].src = this.src.replace('thumbs', 'full');
+      location.href = '#slike';
     });
   };
 });

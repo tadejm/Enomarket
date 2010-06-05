@@ -1,5 +1,5 @@
 - @layout = "application"
-- @page_title = "Enomarket d.o.o. - Trgovina s sredstvi za vinogradništvo in kletarstv"
+- @page_title = "Enomarket d.o.o. - Enološka sredstva, analize vina"
 - @site_name = "Vinski laboratorij"
 - @body_class = "home"
 - @page_description = "Splošni opis dejavnosti, lokacija, urnik in kontakt"
@@ -10,14 +10,9 @@
   %p Opravljamo vse vrste analize vina in oljčnega olja za interno uporabo.
   
   %p Kemična analiza vina obsega do 14 parametrov, kot so vsebnost alkohola, nepovretega sladkorja, prostega in vezanega SO2, titracijskih in hlapnih kislin, pH in analize glede stabilnosti vin na termolabilne beljakovine (bentotest). Opravljamo tudi analize mošta pred trgatvijo na vsebnost sladkorja, mlečne ter jabolčne kisline.
-  
-  .velika-slika
-    = img "full/detajl1.jpg"
-  .slike
-    = img "thumbs/detajl1.jpg"
-    = img "thumbs/detajl2.jpg"
-    = img "thumbs/laboratorij.jpg"
-    
+
+  #slike
+    = partial('partials/vinski_laboratorij_slike')
     
   %p Pri analizi oljčnega olja izmerimo oksidativnost in kisline.
   

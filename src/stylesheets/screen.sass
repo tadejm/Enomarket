@@ -4,7 +4,7 @@
 
 /* @group reset
 
-@import compass/reset.sass
+@import "compass/reset.sass"
 
 /* @end
 
@@ -37,7 +37,7 @@ html, body
       +columns(7, 10)
       color: $font_color
       height: 77px
-      +replace-text(unquote("/images/enomarket_logo_with_glass.png"), left)
+      +replace-text("/images/enomarket_logo_with_glass.png", left)
       &:focus, &:hover, &:active
         border-bottom: 0
 
@@ -55,9 +55,9 @@ html, body
   ul#navigation
     background-color: $navigation_background
     +horizontal-list-container
-    +border-top-radius(unquote(".5em"))
+    +border-top-radius(.5em)
     li
-      +horizontal-list-item(unquote(".5em"))
+      +horizontal-list-item(.5em)
       padding-top: 0.5em
       &:first-child, &.first
         padding-left: 0.5em
@@ -81,7 +81,7 @@ html, body
   background-color: $content_background
   padding-top: 1.5em
   margin-bottom: 1.5em
-  +border-radius(unquote(".5em"))
+  +border-radius(.5em)
   height: 100%
   min-height: 11em
   border-style: solid
@@ -145,7 +145,9 @@ html, body
     margin-bottom: 0.75em
     dt
       font-weight: bold
-
+  .note
+    :font-size 60%
+    :text-align center
 #kontakt
   +columns(10)
   +full
