@@ -127,11 +127,17 @@ html, body
   height: 13em
   margin-bottom: 1.5em
 
-#kontakt, #urnik
+#kontakt, #urnik, #news
   h2
     margin-top: 0.75em
     margin-bottom: 0.75em
 
+.tumblr-post-date
+  :font-size .75em
+  :padding-top .375em
+  background-color: $background_color
+
+  :display inline
 #urnik
   width: 176px
   background: #fffadd url(/images/paperpin.png) no-repeat 5% 0%
@@ -146,8 +152,9 @@ html, body
     dt
       font-weight: bold
   .note
-    :font-size 60%
+    :font-size 0.5em
     :text-align center
+    
 #kontakt
   +columns(10)
   +full

@@ -11,6 +11,12 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>http://www.enomarket.si/novice</loc>
+  <lastmod>2010-04-21T18:50:23+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://www.enomarket.si/trgovina</loc>
   <lastmod>2010-04-21T18:50:23+00:00</lastmod>
   <changefreq>monthly</changefreq>
