@@ -62,7 +62,7 @@ var tumblrBadge = function () {
       list.className = "tumblr_news";
       for (var i=0, il=posts.length; i<il; i=i+1) {
         post = posts[i];
-        
+        if (/<!--[if !supportLists]-->/) {};
         // Only get content for text, photo, quote and link posts
         if (/regular|photo|quote|link|conversation/.test(post.type)) {
           listItem = document.createElement("div");
@@ -76,10 +76,14 @@ var tumblrBadge = function () {
           listItem.appendChild(publishedDate);
 
           text = post["regular-body"] || post["photo-caption"] || post["quote-source"] || post["link-text"] || post["link-url"] || "";
+          text = text.replace(/<\!--\[if \!supportLists\]-->/mg, "");
+          text = text.replace(/<\!--\[endif\]-->/mg, "");
+          
           if (post.type === "photo") {
             link = document.createElement("a");
             link.href = post.url;
             img = document.createElement("img");
+
             // To avoid a creeping page
             img.width = settings.imageSize;
             img.src = post["photo-url-" + settings.imageSize];
@@ -93,6 +97,7 @@ var tumblrBadge = function () {
           else if (post.type === "link") {
             text = '<a href="' + post["link-url"] + '">' + text + '</a>';
           }
+          
           else if (post.type === "conversation") {
             conversation = post["conversation-lines"];
             for (var j=0, jl=conversation.length; j<jl; j=j+1) {
