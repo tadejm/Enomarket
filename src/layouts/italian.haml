@@ -1,7 +1,7 @@
 !!!
-%html(lang="sl")
+%html(lang="it")
   %head
-    = partial('shared/head')
+    = partial('it/shared/head')
 
   %body{ :class => body_class }
 
@@ -9,15 +9,15 @@
 
       #header
         %h1
-          =link 'Enomarket - enološka sredstva, analize vina', '/'
+          =link 'Enomarket - Enologico significa analisi del vino', '/it'
       = partial('shared/lang')
-      = partial('shared/nav')
+      = partial('it/shared/nav')
       
       #content
-        = partial('shared/schedule')
-        = partial('shared/links')
+        = partial('it/shared/schedule')
+        = partial('it/shared/links')
         = yield
       #footer
-        = partial('shared/contact')
+        = partial('it/shared/contact')
 
     = javascripts 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', 'ga1', 'ga2', 'application'

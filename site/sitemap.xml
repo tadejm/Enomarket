@@ -4,28 +4,37 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
   <loc>http://www.enomarket.si/</loc>
-  <lastmod>2010-04-21T18:50:23+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>1.00</priority>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.enomarket.si/it/</loc>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.enomarket.si/novice</loc>
-  <lastmod>2010-04-21T18:50:23+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.enomarket.si/trgovina</loc>
-  <lastmod>2010-04-21T18:50:23+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.enomarket.si/vinski_laboratorij</loc>
-  <lastmod>2010-04-21T18:50:23+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.enomarket.si/it/notizie</loc>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.enomarket.si/it/negozio</loc>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.enomarket.si/it/analisi</loc>
+  <lastmod>2010-07-17T15:50:34+00:00</lastmod>
 </url>
 </urlset>

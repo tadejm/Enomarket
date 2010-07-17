@@ -1,9 +1,21 @@
 $(document).ready(function() {
   var nav = location.pathname.substr(1).split('/', 2)[0] || '/';
-  if (nav)
-    $('ul#navigation > li > a[href$="' + nav + '"]').parent().addClass('active');
+  if (nav == 'it')
+    nav = location.pathname.substr(1).split('/', 2)[1] || '/';
 
-  $('div#ponudba > div > h3').click(function() {
+  if (nav)
+    $('#navigation > li > a[href$="' + nav + '"]').parent().addClass('active');
+
+  $('#ponudba > div > h3').click(function() {
+    if ($.browser.msie)
+      $("ul#" + this.nextSibling.id).toggle();
+    else
+      $("ul#" + this.nextElementSibling.id).toggle();
+
+    $(this.parentNode).toggleClass('active');
+  });
+
+  $('#offerta > div > h3').click(function() {
     if ($.browser.msie)
       $("ul#" + this.nextSibling.id).toggle();
     else
@@ -17,6 +29,14 @@ $(document).ready(function() {
     $('div.slike > img').click(function() {
       $('div.velika-slika > img')[0].src = this.src.replace('thumbs', 'full');
       location.href = '#slike';
+    });
+  };
+
+  var images = $('.immagine').length;
+  if (images) {
+    $('.immagine > img').click(function() {
+      $('.grande-figura > img')[0].src = this.src.replace('thumbs', 'full');
+      location.href = '#immagine';
     });
   };
 });
