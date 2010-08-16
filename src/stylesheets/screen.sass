@@ -61,10 +61,18 @@ html, body
   left: 1em
   padding: .5em
   h3
-    display: inline
+    height: 41px
+    width: 41px
     a
+      display: block
+      height: 41px
+      width: 41px
       &:focus, &:hover, &:active
-        color: $highlight_color
+      color: $highlight_color
+    #slovenski
+      +replace-text("/images/slovenia.png")
+    #italijanski
+      +replace-text("/images/italy.png")
 #nav
   float: right
   +pad(0, 1)
