@@ -16,6 +16,7 @@ desc "Delete generated html"
 task :clear => 'styles:clear' do
   puts "*** Clearing the views ***"
   system "rm -fv site/*html"
+  system "rm -fv site/it/*html"
 end
 
 desc "Clears and generates new styles, builds and deploys"
